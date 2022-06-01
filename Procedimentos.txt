@@ -7,3 +7,5 @@ Limpeza:
 	Em Ozônio, foram excluídas as colunas Data, 10%, 30%, 70% e 90%.
 	Excluiu-se o cabeçalho em cada planilha.
 	Traduziram-se os dados.
+	Os dados foram formatados com duas casas decimais.
+	Criou-se o Dashboard.
