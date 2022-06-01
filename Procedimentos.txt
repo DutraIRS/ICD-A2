@@ -1,0 +1,9 @@
+Coleta:
+	Os dados foram obtidos das bases de dados online da NASA e transpostos para Excel.
+
+Limpeza:
+	Os dados originais foram mantidos inalterados por motivos de segurança.
+	Foram excluídas as linhas com dados faltantes.
+	Em Ozônio, foram excluídas as colunas Data, 10%, 30%, 70% e 90%.
+	Excluiu-se o cabeçalho em cada planilha.
+	Traduziram-se os dados.
