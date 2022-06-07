@@ -1,0 +1,27 @@
+Coleta:
+	Os dados foram obtidos das bases de dados online da NASA e transpostos para Excel.
+
+Limpeza:
+	Os dados originais foram mantidos inalterados por motivos de segurança.
+	Foram excluídas as linhas com dados faltantes.
+	Em Ozônio, foram excluídas as colunas Data, 10%, 30%, 70% e 90%.
+	Excluiu-se o cabeçalho explicativo em cada planilha.
+	Traduziram-se os dados.
+	Os dados foram formatados com duas casas decimais.
+
+Dashboard:
+	As tabelas dinâmicas foram criadas a partir das tabelas limpas.
+	As funções em VBA para filtrar as tabelas dinâmicas pelos anos especificados no Dashboard e pela métrica escolhida pelo usuário foram criadas.
+	Os seguintes gráficos dinâmicos foram criados: área do buraco na camada de ozônio em milhões de km² no período escolhido pelo usuário e de acordo com a métrica escolhida (mínimo, média ou máximo),
+																								 anomalia em °C das temperaturas médias globais de acordo com o período e métrica (dado nominal ou média móvel dos últimos 5 anos) escolhidos,
+																								 sobreposição em escalas independentes dos dois anteriores.
+	Os seguintes gráficos estáticos foram criados: extrapolação da linha de tendência linear da área do buraco na camadad de ozônio para os próximos 20 anos,
+																								 extrapolação da linha de tendência polinomial de segunda ordem da anomalia nas temperaturas médias para os próximos 20 anos,
+																								 previsão automática do Excel com intervalo de confiança de 95 % da área do buraco na camada de ozônio para os próximos 20 anos,
+																								 previsão automática do Excel com intervalo de confiança de 95 % da anomalia nas temperaturas médias para os próximos 20 anos.
+	Para criar os gráficos estáticos, o recurso Forecast Sheet foi usado a partir das tabelas da planilha Tendência.
+	As possíveis exceções foram tratadas.
+	Para evitar levantar mensagem de erros durante a navegação (interrompendo-a), as funções foram vinculadas a um botão.
+	Notamos que o gráfico conjunto estava perdendo a formatação quando atualizado (a escala secundária era excluída). Para resolver isso, foi necessário criar uma função que reconfigura as escalas do gráfico.
+	Esta última função não era executada adequadamente quando a planilha estava protegida, sendo necessário alterar a função para que ela primeiro desproteja a planilha, atualize o gráfico e proteja novamente a planilha.
+	Além de proteger o Dashboard, as demais planilhas foram ocultadas, o painel principal foi congelado, as linhas de grade, títulos e linhas ou colunas não utilizadas foram escondidas.
